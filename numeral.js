@@ -500,7 +500,7 @@
         }
 
         //trim whitespaces from either sides
-        val = val.trim();
+        val = val.replace(/^\s+/, '').replace(/\s+$/, '');
 
         //if val is just digits return true
         if ( !! val.match(/^\d+$/)) {
